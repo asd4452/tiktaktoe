@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         OutputManager.printWelcomeMessage();
 
@@ -9,7 +9,6 @@ public class Main {
         Menu.setOption();
         Game.setup(Game.mode, player1, player2);
         Game.start(player1, player2);
-
 
 
     }
