@@ -13,6 +13,7 @@ Create Player class. This class should represent each individual player.
 Players can place their symbol on the game board.
 
 Fields: symbol, hasTurn, hasWon
+Methods: placeSymbol
 
 ========================================================================================================================
 Step 3:
