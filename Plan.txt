@@ -1,6 +1,30 @@
+========================================================================================================================
 Step 1:
 
-Create GameBoard class. The class represents the board where players can place their symbols.
+Create GameBoard class. The class represents the board, where players can place their symbols.
+
 Fields: boxes[][], isFull
 Methods: show, empty
+
+========================================================================================================================
+Step 2:
+
+Create Player class. This class should represent each individual player.
+Players can place their symbol on the game board.
+
+Fields: symbol, hasTurn, hasWon
+
+========================================================================================================================
+Step 3:
+
+Create Game class. This class is responsible for the game process (starting / ending a game) and the game logic.
+
+Fields: totalTurns
+Methods: start, end, reset, checkForWinner
+
+========================================================================================================================
+Step 4:
+========================================================================================================================
+Step 5:
+========================================================================================================================
 
