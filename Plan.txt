@@ -1,6 +1,6 @@
 Step 1:
 
-Create GameBoard class.
+Create GameBoard class. The class represents the board where players can place their symbols.
 Fields: boxes[][], isFull
 Methods: show, empty
 
