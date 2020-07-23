@@ -3,7 +3,7 @@ Step 1:
 
 Create GameBoard class. The class represents the board, where players can place their symbols.
 
-Fields: boxes[][], isFull
+Fields: char boxes[][], boolean isFull
 Methods: show, empty
 
 ========================================================================================================================
@@ -12,7 +12,7 @@ Step 2:
 Create Player class. This class should represent each individual player.
 Players can place their symbol on the game board.
 
-Fields: symbol, hasTurn, hasWon
+Fields: char symbol, boolean hasTurn, boolean hasWon
 Methods: placeSymbol
 
 ========================================================================================================================
@@ -20,7 +20,7 @@ Step 3:
 
 Create Game class. This class is responsible for the game process (starting / ending a game) and the game logic.
 
-Fields: totalTurns
+Fields: int totalTurns, boolean foundWinner
 Methods: start, end, reset, checkForWinner
 
 ========================================================================================================================
