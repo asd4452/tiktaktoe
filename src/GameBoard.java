@@ -1,6 +1,5 @@
 public class GameBoard {
 
-    private boolean boxesAreFull = false;
     char boxes[][] = new char[3][3];
 
 
