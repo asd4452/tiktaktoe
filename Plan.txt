@@ -11,9 +11,12 @@ Step 2:
 
 Create Player class. This class should represent each individual player.
 Players can place their symbol on the game board.
+Display the player name and symbol before placing it on the board.
 
 Fields: char symbol, boolean hasTurn, boolean hasWon
-Methods: placeSymbol
+Methods:
+    placeSymbol - allows the user to select a row and column and place the symbol on the gameboard
+    verifySymbolPlacement - checks if the selected field by placeSymbol is already occupied
 
 ========================================================================================================================
 Step 3:
@@ -21,10 +24,16 @@ Step 3:
 Create Game class. This class is responsible for the game process (starting / ending a game) and the game logic.
 
 Fields: int totalTurns, boolean foundWinner
-Methods: start, end, reset, checkForWinner
+Methods: start, end, reset, checkForWinner,
 
 ========================================================================================================================
 Step 4:
+
+Create an Input class that is responsible for managing and validating the user input.
+
+Fields: none
+Methods: getInteger
+
 ========================================================================================================================
 Step 5:
 ========================================================================================================================
