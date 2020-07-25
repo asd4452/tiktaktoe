@@ -7,12 +7,24 @@ public class Player {
     boolean hasWon = false;
 
     void placeSymbol(GameBoard gameBoard){
-        System.out.print("Chose a row: ");
-        int row = scanner.nextInt();
+        while(true){
+            System.out.print("player " + this.symbol + " chose a row: ");
+            int row = scanner.nextInt();
 
-        System.out.print("Chose a column: ");
-        int column = scanner.nextInt();
+            System.out.print("player " + this.symbol + " chose a column: ");
+            int column = scanner.nextInt();
 
-        gameBoard.boxes[row][column] = this.symbol;
+            if (verifySymbolPlacement(row, column, gameBoard)){
+                gameBoard.boxes[row][column] = this.symbol;
+                break;
+            }else {
+                System.out.println("That field is occupied. Try again.");
+            }
+        }
+    }
+
+    boolean verifySymbolPlacement(int row, int column, GameBoard gameBoard){
+        if(gameBoard.boxes[row][column] == ' ') return true;
+        return false;
     }
 }
