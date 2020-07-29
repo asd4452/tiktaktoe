@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
 public class Input {
-
-
     public static int getInteger(int min, int max){
         Scanner scanner = new Scanner(System.in);
         while(true){
@@ -13,7 +11,7 @@ public class Input {
                 System.out.println("That is not an integer");
             }
             scanner.nextLine();
-            System.out.print("Try again: ");
+            System.out.print("Try again, number must be between " + min + " and " + max + ": ");
         }
 
     }
