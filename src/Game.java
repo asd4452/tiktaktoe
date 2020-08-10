@@ -76,9 +76,11 @@ public class Game {
         return false;
     }
 
-    public void reset(GameBoard gameBoard) {
+    public void reset(GameBoard gameBoard, Player playerOne, Player playerTwo) {
         totalTurns = 0;
         foundWinner = false;
+        playerOne.hasWon = false;
+        playerTwo.hasWon = false;
         gameBoard.empty();
     }
 }

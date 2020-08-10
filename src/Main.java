@@ -15,12 +15,11 @@ public class Main {
 
 
         while (playAgain.equals("yes")) {
-            game.reset(gameBoard);
+            game.reset(gameBoard, playerOne, playerTwo);
             gameBoard.show();
             game.start(playerOne, playerTwo, gameBoard);
             System.out.print("Play again (yes/no)? ");
             playAgain = scanner.nextLine();
-
         }
 
         System.out.println("Goodbye!");
