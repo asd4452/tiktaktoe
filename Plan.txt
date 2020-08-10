@@ -36,5 +36,23 @@ Methods: getInteger
 
 ========================================================================================================================
 Step 5:
+
+Create a Menu class that is responsible for showing and navigating through the menu.
+
+Fields: none
+Methods: show
+
+========================================================================================================================
+Step 6:
+
+Create a Bot class that that represents the AI enemy and its actions.
+The player should be able to chose to play vs a bot in beginner, medium or hard difficulty.
+
+Fields: char symbol, boolean hasTurn, boolean hasWon, string difficulty
+Methods:
+    placeSymbol - the bot takes a turn to place a symbol on the gameBoard
+    verifySymbolPlacement - checks if the selected field by placeSymbol is already occupied
+
+========================================================================================================================
 ========================================================================================================================
 
